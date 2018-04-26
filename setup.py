@@ -11,7 +11,8 @@ install_requires = [
     # List your project dependencies here.
     # For more details, see:
     # http://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-dependencies
-    'channels >= 2.0.0'
+    'channels >= 2.0.0',
+    'graphene >= 2.0'
 ]
 
 setup(
@@ -25,7 +26,7 @@ setup(
     keywords='api graphql graphene django channels',
     author='Yogesh Sajanikar',
     author_email='yogesh_sajanikar@yahoo.com',
-    url='',
+    url='https://github.com/yogeshsajanikar/channels-graphene',
     license='MIT',
     packages=find_packages('src'),
     package_dir={'': 'src'},
