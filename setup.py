@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-import sys, os
+import os
 
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.rst')).read()
@@ -10,7 +10,8 @@ version = '0.1'
 install_requires = [
     # List your project dependencies here.
     # For more details, see:
-    # http://packages.python.org/distribute/setuptools.html#declaring-dependencies
+    # http://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-dependencies
+    'channels >= 2.0.0'
 ]
 
 setup(
@@ -32,5 +33,5 @@ setup(
     zip_safe=False,
     install_requires=install_requires,
     entry_points={
-        'console_scripts': ['channels-graphene=channelsgraphene:main']
+        'console_scripts': ['channels-graphene=channels.graphene:main']
     })

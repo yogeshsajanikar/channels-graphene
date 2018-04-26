@@ -20,8 +20,9 @@ use the -c option to specify an alternate configuration file.
 $Id: bootstrap.py 102545 2009-08-06 14:49:47Z chrisw $
 """
 
-import os, shutil, sys, tempfile, urllib2
+import os, shutil, sys, tempfile, urllib2  # noqa: E401
 from optparse import OptionParser
+import zc.buildout.buildout
 
 tmpeggs = tempfile.mkdtemp()
 
@@ -127,6 +128,5 @@ else:
 
 ws.add_entry(tmpeggs)
 ws.require('zc.buildout' + VERSION)
-import zc.buildout.buildout
 zc.buildout.buildout.main(args)
 shutil.rmtree(tmpeggs)

@@ -1,15 +1,12 @@
-This file requires editing
-==========================
+channels-graphene
+===================
 
-Note to the author: Please add something informative to this README *before*
-releasing your software, as `a little documentation goes a long way`_.  Both
-README.rst (this file) and NEWS.txt (release notes) will be included in your
-package metadata which gets displayed in the PyPI page for your project.
+This package combines `GraphQL`_ and `channels`_ to support GraphQL asynchronously. This package is inspired from `graphene_django`_ package, and based on excellent `graphene`_.
 
-You can take a look at the README.txt of other projects, such as repoze.bfg
-(http://bfg.repoze.org/trac/browser/trunk/README.txt) for some ideas.
+.. _`GraphQL`: http://graphql.org
+.. _`channels`: https://channels.readthedocs.io
+.. _`graphene`: http://graphene-python.org
 
-.. _`a little documentation goes a long way`: http://www.martinaspeli.net/articles/a-little-documentation-goes-a-long-way
 
 Credits
 -------
